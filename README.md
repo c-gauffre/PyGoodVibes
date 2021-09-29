@@ -2,6 +2,9 @@
 **détection non supervisée de sons anormaux**
 Réalisé par Chrisophe Gauffre et Aurélien Nanette
 
+contact linkedin: /christophegauffre  /a-nanette
+
+
 # A propos
 Ce projet vous propose l'exécution d'un app streamlit, vous permettant de comprendre comment traiter des données audio, et détecter des anomalies dans des sons de machine.
 Les données sont issues de [Kaggle](https://www.kaggle.com/daisukelab/dc2020task2).
