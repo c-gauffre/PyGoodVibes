@@ -5,17 +5,15 @@
 Ce projet vous propose l'exécution d'un app streamlit, vous permettant de comprendre comment traiter des données audio, et détecter des anomalies dans des sons de machine.
 Les données sont issues de [Kaggle](https://www.kaggle.com/daisukelab/dc2020task2).
 
+![image](https://user-images.githubusercontent.com/53881073/135213653-a90129a9-79cf-4717-8982-e143bfda212e.png)
+
 Tous les détails ne sont pas mentionnés, mais vous pourrez saisir la philosophie du traitement de données effectué:
-- **transformation des sons** audio en représentation temps-fréquence (spectrogrammes)
-
+1. **transformation des sons** audio en représentation temps-fréquence (spectrogrammes)
 ![image](https://user-images.githubusercontent.com/53881073/135142159-bee72160-e159-488a-aea6-484ce0f8ca0b.png)
-- **encodage des spectrogrammes**: _embedding_, et _ACP_ pour générer de beaux nuages de points de sons normaux.
-
+1. **encodage des spectrogrammes**: _embedding_, et _ACP_ pour générer de beaux nuages de points de sons normaux.
 ![image](https://user-images.githubusercontent.com/53881073/135142090-7497b3ad-4b5a-423d-8cba-a5564c11a375.png)
-- **détection d'anomalies** dans les nuages de points comportant des sons normaux et des sons anormaux par _One Class SVM_ et _Local Outlier Factor_
-
-![image](https://user-images.githubusercontent.com/53881073/135142241-8f6305d4-080c-41ee-9784-19846fde7378.png)
-
+1. **détection d'anomalies** dans les nuages de points comportant des sons normaux et des sons anormaux par _One Class SVM_ et _Local Outlier Factor_
+![reglage-gamma-OSVM3](https://user-images.githubusercontent.com/53881073/135214068-33794be5-c10a-49c1-886b-df8a369df08f.png)
 
 # Utilisation
 Pour que ce notebook soit pleinement opérationnel, une utilisation avec colab et google drive est vivement conseillée.
@@ -25,6 +23,8 @@ Pour que ce notebook soit pleinement opérationnel, une utilisation avec colab e
 - exécuter chaque cellule, _sauf  la dernière!_ (elle kill le tunnel et rendra le streamlit inopérationnel! ) 
 
 # Résultats
-Selon les types de machine, les résultats varient de très bons (quasi 100% sans faux positifs) à très mauvais (quasi du hasard on dirait..), selon le seuil de sensibilité réglé sur l'app.
+Selon les types de machine, les résultats varient de très bons (quasi 100% sans faux positifs) à très mauvais (quasi du hasard on dirait..), selon le seuil de sensibilité réglé sur l'app. es résultats sont sensiblement les mêmes entre le OcSVM ou le LOF
+
+![image](https://user-images.githubusercontent.com/53881073/135142241-8f6305d4-080c-41ee-9784-19846fde7378.png)
 
 **Lancez le streamlit, cela vous donnera un bon aperçu de ce qu'il est possible de faire!**
