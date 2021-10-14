@@ -2,7 +2,7 @@
 **détection non supervisée de sons anormaux**
 Réalisé par Chrisophe Gauffre et Aurélien Nanette
 
-contact linkedin: /christophegauffre  /a-nanette
+contact linkedin: [/christophegauffre](https://www.linkedin.com/in/christophegauffre)  [/a-nanette](https://www.linkedin.com/in/a-nanette)
 
 
 # A propos
